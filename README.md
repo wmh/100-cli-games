@@ -21,7 +21,7 @@ python main.py
 
 ### Week 1: Classic Arcade
 1. **Breakout (打磚塊)** ✅ - Break all bricks with your paddle
-2. Snake - Classic snake game
+2. **Snake (貪吃蛇)** ✅ - Classic snake game
 3. Pong - Two-player paddle game
 4. Space Invaders - Shoot alien invaders
 5. Tetris - Falling blocks puzzle

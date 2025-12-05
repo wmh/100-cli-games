@@ -9,7 +9,7 @@ console = Console()
 
 GAMES = [
     {"id": 1, "name": "Breakout (打磚塊)", "status": "✅", "file": "game_001_breakout"},
-    {"id": 2, "name": "Snake", "status": "⏳", "file": "game_002_snake"},
+    {"id": 2, "name": "Snake (貪吃蛇)", "status": "✅", "file": "game_002_snake"},
     {"id": 3, "name": "Pong", "status": "⏳", "file": "game_003_pong"},
     {"id": 4, "name": "Space Invaders", "status": "⏳", "file": "game_004_space_invaders"},
     {"id": 5, "name": "Tetris", "status": "⏳", "file": "game_005_tetris"},
