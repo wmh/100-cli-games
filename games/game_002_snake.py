@@ -16,10 +16,10 @@ class Snake:
         # Snake starts in center, moving right
         start_x = self.width // 2
         start_y = self.height // 2
-        self.snake = deque([(start_x, start_y), (start_x-1, start_y), (start_x-2, start_y)])
+        self.snake = deque([(start_x, start_y), (start_x-2, start_y), (start_x-4, start_y)])
         
-        self.direction = (1, 0)  # (dx, dy) - moving right
-        self.next_direction = (1, 0)
+        self.direction = (2, 0)  # (dx, dy) - moving right (2x for horizontal)
+        self.next_direction = (2, 0)
         
         self.food = None
         self.score = 0
@@ -71,6 +71,9 @@ class Snake:
         """Spawn food at random empty location"""
         while True:
             x = random.randint(2, self.width - 3)
+            # Make sure x is even for horizontal alignment
+            if x % 2 != 0:
+                x += 1
             y = random.randint(2, self.height - 3)
             if (x, y) not in self.snake:
                 self.food = (x, y)
@@ -133,11 +136,11 @@ class Snake:
             if dy != -1:  # Not moving up
                 self.next_direction = (0, 1)
         elif key == curses.KEY_LEFT or key == ord('a') or key == ord('A'):
-            if dx != 1:  # Not moving right
-                self.next_direction = (-1, 0)
+            if dx != 2:  # Not moving right
+                self.next_direction = (-2, 0)
         elif key == curses.KEY_RIGHT or key == ord('d') or key == ord('D'):
-            if dx != -1:  # Not moving left
-                self.next_direction = (1, 0)
+            if dx != -2:  # Not moving left
+                self.next_direction = (2, 0)
     
     def update(self):
         """Update game state"""
