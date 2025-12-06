@@ -13,7 +13,7 @@ GAMES = [
     {"id": 3, "name": "Pong (乒乓球)", "status": "✅", "file": "game_003_pong"},
     {"id": 4, "name": "Space Invaders (太空侵略者)", "status": "✅", "file": "game_004_space_invaders"},
     {"id": 5, "name": "Tetris (俄羅斯方塊)", "status": "✅", "file": "game_005_tetris"},
-    {"id": 6, "name": "Pac-Man", "status": "⏳", "file": "game_006_pacman"},
+    {"id": 6, "name": "Pac-Man (小精靈)", "status": "✅", "file": "game_006_pacman"},
     {"id": 7, "name": "Asteroids", "status": "⏳", "file": "game_007_asteroids"},
     {"id": 8, "name": "2048", "status": "⏳", "file": "game_008_2048"},
     {"id": 9, "name": "Minesweeper", "status": "⏳", "file": "game_009_minesweeper"},

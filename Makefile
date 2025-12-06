@@ -18,6 +18,7 @@ help:
 	@echo "  make day3         - 運行 Day 3: Pong"
 	@echo "  make day4         - 運行 Day 4: Space Invaders"
 	@echo "  make day5         - 運行 Day 5: Tetris"
+	@echo "  make day6         - 運行 Day 6: Pac-Man"
 	@echo ""
 
 # 運行主選單
@@ -81,19 +82,25 @@ day5:
 	@echo "🎮 啟動 Day 5: Tetris (俄羅斯方塊)"
 	@python3 games/game_005_tetris.py
 
+# Day 6: Pac-Man
+day6:
+	@echo "🎮 啟動 Day 6: Pac-Man (小精靈)"
+	@python3 games/game_006_pacman.py
+
 # 別名
 breakout: day1
 snake: day2
 pong: day3
 invaders: day4
 tetris: day5
+pacman: day6
 
 # 顯示專案資訊
 info:
 	@echo "📊 專案資訊"
 	@echo "============================================"
 	@echo "專案名稱: 100 CLI Games Challenge"
-	@echo "完成進度: 5/100 遊戲"
+	@echo "完成進度: 6/100 遊戲"
 	@echo ""
 	@echo "已完成遊戲:"
 	@echo "  1. Breakout (打磚塊)"
@@ -101,6 +108,7 @@ info:
 	@echo "  3. Pong (乒乓球)"
 	@echo "  4. Space Invaders (太空侵略者)"
 	@echo "  5. Tetris (俄羅斯方塊)"
+	@echo "  6. Pac-Man (小精靈)"
 	@echo ""
 	@echo "Python 版本: $(shell python3 --version)"
 	@echo "檔案統計:"

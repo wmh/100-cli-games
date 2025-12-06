@@ -24,7 +24,7 @@
 3. ✅ **Pong** - 雙人乒乓球遊戲
 4. ✅ **Space Invaders** - 太空侵略者射擊遊戲
 5. ✅ **Tetris** - 俄羅斯方塊
-6. **Pac-Man** - 小精靈迷宮遊戲
+6. ✅ **Pac-Man** - 小精靈迷宮遊戲
 7. **Asteroids** - 小行星射擊遊戲
 
 ### Week 2: Puzzle Games (益智遊戲)
@@ -230,9 +230,9 @@ if __name__ == "__main__":
 歡迎提交 Pull Request 或提出建議！
 
 ## Progress Tracking 進度追蹤
-- Completed: 5/100 ✅
+- Completed: 6/100 ✅
 - In Progress: 0/100 🚧
-- Planned: 95/100 ⏳
+- Planned: 94/100 ⏳
 
 ---
-**Last Updated**: 2025-12-06 (Day 5)
+**Last Updated**: 2025-12-06 (Day 6)
