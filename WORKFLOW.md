@@ -10,15 +10,16 @@
 ### 每日遊戲開發步驟
 
 #### 1. 規劃階段
-- [ ] 創建 DAY_XX_PLAN.md
+- [ ] 創建 `days/day_XX/DAY_XX_PLAN.md`
 - [ ] 設計遊戲機制
 - [ ] 規劃技術實作
 
 #### 2. 開發階段
-- [ ] 創建遊戲檔案 `game_XXX_name.py`
+- [ ] 創建遊戲檔案 `games/game_XXX_name.py`
 - [ ] 實作遊戲邏輯
 - [ ] 更新主選單 `utils/menu.py`
-- [ ] 更新 README.md
+- [ ] 更新 `README.md`
+- [ ] 更新 `GAMES_PLAN.md` 進度
 
 #### 3. ⚠️ **測試階段（必須由使用者執行）**
 ```bash
@@ -69,6 +70,20 @@ git commit -m "詳細的 commit 訊息"
 git push origin main
 ```
 
+#### 7. 📊 Post-Push 檢查
+
+**Push 成功後立即執行：**
+```bash
+# 檢查並更新 repository description
+gh repo view --json description
+gh repo edit --description "🎮 100 CLI Games Challenge - One game per day! X/100 completed: [遊戲列表] ✅ | Flicker-free terminal games with Python & curses"
+```
+
+**更新內容：**
+- [ ] 完成數量 (X/100)
+- [ ] 最新完成的遊戲名稱
+- [ ] 保持描述簡潔（GitHub 限制 350 字元）
+
 ## 🎯 AI 助手行為準則
 
 ### ✅ 應該做的
@@ -95,8 +110,9 @@ git push origin main
 - games/game_XXX_name.py
 - utils/menu.py (已更新)
 - README.md (已更新)
-- DAY_XX_PLAN.md
-- DAY_XX_COMPLETE.md
+- GAMES_PLAN.md (已更新進度)
+- days/day_XX/DAY_XX_PLAN.md
+- days/day_XX/DAY_XX_COMPLETE.md
 
 🧪 請測試遊戲：
 ```bash
@@ -142,6 +158,8 @@ python3 main.py
 - [ ] 已獲得 commit 許可
 - [ ] 已獲得 push 許可
 - [ ] Push 成功
+- [ ] Repository description 已更新
+- [ ] 檔案已正確組織在 `days/day_XX/` 目錄
 
 ## 🎓 學習重點
 
@@ -153,8 +171,36 @@ python3 main.py
 **使用者是測試者和決策者**
 **AI 是開發者和助手**
 
+## 📁 檔案組織規則
+
+### 目錄結構
+```
+100-cli-games/
+├── days/                      # 每日開發記錄
+│   ├── day_01/               # Day 1 的所有文檔
+│   │   ├── DAY_01_PLAN.md
+│   │   ├── DAY_01_COMPLETE.md
+│   │   └── [其他開發筆記].md
+│   ├── day_02/               # Day 2 的所有文檔
+│   └── ...
+├── games/                    # 遊戲代碼
+│   ├── game_001_name.py
+│   └── ...
+├── utils/                    # 工具模組
+├── README.md                 # 專案說明
+├── GAMES_PLAN.md            # 遊戲計畫
+└── WORKFLOW.md              # 本文件
+```
+
+### 命名規則
+- 計畫文檔: `days/day_XX/DAY_XX_PLAN.md`
+- 完成文檔: `days/day_XX/DAY_XX_COMPLETE.md`
+- 遊戲代碼: `games/game_XXX_name.py`
+- 除錯筆記: `days/day_XX/ISSUE_NAME.md`
+
 ---
 **創建日期**: 2025-12-05
+**最後更新**: 2025-12-06
 **重要性**: ⭐⭐⭐⭐⭐
 **必須遵守**: 是
 
