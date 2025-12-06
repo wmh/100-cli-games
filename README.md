@@ -24,7 +24,7 @@ python main.py
 2. **Snake (貪吃蛇)** ✅ - Classic snake game
 3. **Pong (乒乓球)** ✅ - Two-player paddle game
 4. **Space Invaders (太空侵略者)** ✅ - Shoot alien invaders
-5. Tetris - Falling blocks puzzle
+5. **Tetris (俄羅斯方塊)** ✅ - Falling blocks puzzle
 6. Pac-Man - Maze chase game
 7. Asteroids - Space shooter
 
