@@ -12,7 +12,7 @@ GAMES = [
     {"id": 6, "name": "Pac-Man (小精靈)", "status": "✅", "file": "game_006_pacman"},
     {"id": 7, "name": "2048 (數字合併)", "status": "✅", "file": "game_007_2048"},
     {"id": 8, "name": "Minesweeper (踩地雷)", "status": "✅", "file": "game_008_minesweeper"},
-    {"id": 9, "name": "Wordle (猜單字)", "status": "⏳", "file": "game_009_wordle"},
+    {"id": 9, "name": "Wordle (猜單字)", "status": "✅", "file": "game_009_wordle"},
     {"id": 10, "name": "Sokoban (推箱子)", "status": "⏳", "file": "game_010_sokoban"},
 ]
 
@@ -30,7 +30,7 @@ def draw_menu(stdscr, selected_idx):
         stdscr.addstr(3, (w - len(subtitle)) // 2, subtitle)
         
         # Progress
-        progress = f"Progress: 8/10 Games (80%)"
+        progress = f"Progress: 9/10 Games (90%)"
         stdscr.addstr(4, (w - len(progress)) // 2, progress)
         
         # Separator
