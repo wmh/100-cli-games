@@ -27,9 +27,9 @@ python main.py
 5. **Tetris (俄羅斯方塊)** ✅ - Falling blocks puzzle
 6. **Pac-Man (小精靈)** ✅ - Maze chase game
 
-### Puzzle & Logic (1/4) 🚧
+### Puzzle & Logic (2/4) 🚧
 7. **2048 (數字合併)** ✅ - Number merging puzzle (perfect for CLI)
-8. **Minesweeper** ⏳ - Classic logic game
+8. **Minesweeper (踩地雷)** ✅ - Classic logic game
 9. **Wordle** ⏳ - Word guessing game
 10. **Sokoban** ⏳ - Box pushing puzzle
 

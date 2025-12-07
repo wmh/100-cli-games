@@ -28,7 +28,7 @@
 
 ### Puzzle & Logic (益智邏輯) - 4 Games
 7. ✅ **2048** - 數字合併益智遊戲（完美適合CLI）
-8. ⏳ **Minesweeper** - 踩地雷（經典邏輯遊戲）
+8. ✅ **Minesweeper** - 踩地雷（經典邏輯遊戲）
 9. ⏳ **Wordle** - 猜單字遊戲（文字遊戲最佳代表）
 10. ⏳ **Sokoban** - 推箱子（回合制，視覺清晰）
 
@@ -270,9 +270,9 @@ if __name__ == "__main__":
 歡迎提交 Pull Request 或提出建議！
 
 ## Progress Tracking 進度追蹤
-- Completed: 7/10 ✅ (70%)
+- Completed: 8/10 ✅ (80%)
 - In Progress: 0/10 🚧
-- Planned: 3/10 ⏳ (30%)
+- Planned: 2/10 ⏳ (20%)
 
 **Total**: 10 精選遊戲（專注品質勝過數量）
 
